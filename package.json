@@ -21,6 +21,13 @@
   "type": "module",
   "homepage": "https://github.com/PabloPoney/frontend-project-lvl1#readme",
   "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.2"
   }
 }
