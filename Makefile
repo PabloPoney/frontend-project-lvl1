@@ -9,3 +9,6 @@ brain-games:
 
 lint:
 	npx eslint .
+
+lint-fix:
+	npx eslint --fix .
