@@ -20,7 +20,7 @@ const gameStep = () => {
   const secretIndex = randomNumber(arrProgress.length - 1, 0);
   const answer = arrProgress[secretIndex];
   arrProgress[secretIndex] = '..';
-  console.log(`Question: ${arrProgress}`);
+  console.log(`Question: ${arrProgress.join(' ')}`);
   const userAns = readlineSync.question('Your asnswer: ');
   if (Number(userAns) !== answer) {
     console.log(`${userAns} is wrong answer ;(. Correct answer was ${answer}.`);
