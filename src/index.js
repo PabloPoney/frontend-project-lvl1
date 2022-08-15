@@ -21,5 +21,4 @@ export const gameLogic = (name, discription, gameFunc) => {
     return;
   }
   console.log(`Let's try again, ${name}!`);
-  gameLogic(name, discription, gameFunc);
 };
