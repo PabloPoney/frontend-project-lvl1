@@ -6,7 +6,7 @@ import { acquaintance, gameLogic, randomNumber } from '../src/index.js';
 const discription = 'What is the result of the expression?';
 const randomSign = () => {
   const signs = ['+', '-', '*'];
-  return signs[randomNumber(3) - 1];
+  return signs[randomNumber(2, 0)];
 };
 
 const calc = {

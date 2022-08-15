@@ -2,7 +2,10 @@
 
 import readlineSync from 'readline-sync';
 
-export const randomNumber = (last) => Math.ceil(Math.random() * last);
+export const randomNumber = (max = 100, min = 1) => {
+  const number = Math.random() * (max - min + 1) + min - 1;
+  return Math.ceil(number);
+};
 
 export const acquaintance = () => {
   console.log('Welcome to the Brain Games!');

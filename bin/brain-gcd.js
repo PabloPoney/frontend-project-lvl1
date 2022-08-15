@@ -7,9 +7,8 @@ const discription = 'Find the greatest common divisor of given numbers.';
 const GCD = (a, b) => {
   if (b > a) return GCD(b, a);
   if (b === 0) return a;
-  return GCD(b , a % b);
+  return GCD(b, a % b);
 };
-
 
 const gameStep = () => {
   const num1 = randomNumber(50);
