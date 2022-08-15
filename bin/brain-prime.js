@@ -15,9 +15,9 @@ const isItPrime = (num) => {
 const discription = 'Answer "yes" if the number is prime, otherwise answer "no".';
 
 const gameStep = () => {
-  const num = randomNumber(5);
-  const prime = isItPrime(num);
-  console.log(`Question: ${num}`);
+  const number = randomNumber(5);
+  const prime = isItPrime(number);
+  console.log(`Question: ${number}`);
   const answer = readlineSync.question('Your asnswer: ');
   if (answer.toLowerCase() !== prime) {
     console.log(`${_.capitalize(answer)} is wrong answer ;(. Correct answer was ${prime}.`);
