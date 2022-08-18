@@ -5,8 +5,9 @@ import readlineSync from 'readline-sync';
 import { acquaintance, gameLogic, randomNumber } from '../src/index.js';
 
 const isItPrime = (num) => {
-  const halfNum = Math.floor(num / 2);
-  for (let i = halfNum; i > 1; i -= 1) {
+  if (num < 2) return 'no';
+  const sqrt = Math.floor(Math.sqrt(num));
+  for (let i = 2; i <= sqrt; i += 1) {
     if (num % i === 0) return 'no';
   }
   return 'yes';
